@@ -6,6 +6,7 @@ d. Demonstrate how to pass values from derived class constructor to base class c
 e. Display the attributes of the car and a bike using abstract method. */
 
 package lab_programs;
+
 abstract class Vehicle{
 	String fuel;
 

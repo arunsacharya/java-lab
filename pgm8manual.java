@@ -30,8 +30,9 @@ public void mouseClicked(MouseEvent e) {
 	{
 			color="green";
 	}
-	else{
-		color="green";
+	else if(color=="green")
+	{
+		color="red";
 	}
 	repaint();
 }

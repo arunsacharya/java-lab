@@ -5,7 +5,7 @@ c. Automate the Traffic Signal to change Traffic Light periodically. */
 
 /*Automatic Signal Control*/
 
-package lab_programs;
+package lab;
 
 import java.applet.Applet;
 import java.awt.Color;
@@ -16,7 +16,7 @@ import java.util.logging.Logger;
 public class pgm8automatic extends Applet implements Runnable {
     String color; int x;
     public void init() {
-        color="red";
+        color="green";
         x=0;
         new Thread(this).start();
     }
@@ -26,11 +26,18 @@ public class pgm8automatic extends Applet implements Runnable {
         while(true){
         if(x<=0 && color=="red")
         {
-            color="green";
-            x=40;
-        }else{
+        	color="yellow";
+            x=5;
+        }
+        else if(x<=0 && color=="yellow")
+        {
+        	color="green";
+        	x=10;
+        }
+        else if(x<=0 && color=="green")
+        {
             color="red";
-            x=20;
+            x=10;
         }
         while(x!=0){
             x-=1;
@@ -51,9 +58,16 @@ public class pgm8automatic extends Applet implements Runnable {
     {
         g.setColor(Color.red);
         g.fillOval(100, 100, 100, 100);
-    }else{
-        g.setColor(Color.green);
+    }
+    else if(color=="yellow")
+    {
+        g.setColor(Color.yellow);
         g.fillOval(100, 100, 100, 100);
     }
+    else if(color=="green")
+    {
+        g.setColor(Color.green);
+        g.fillOval(100, 100, 100, 100);
     }    
+}
 }

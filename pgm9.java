@@ -1,4 +1,9 @@
-package lab;
+/* 9. We need our class time tables to be prepared and displayed. Given Day, time and Subjects of the classes in a flat files (filename.txt file), a Java program needs to be constructed for displaying the time table for a section. (hint: use SWING CONTROLS, FILE OPERATION)
+a. The elements in the flat files are separated by commas. 
+b. Modify the program to support elements in the file separated using single space separator.
+c. Display the data from flat file in the table control. */
+
+package lab_programs;
 
 import java.awt.*;
 import javax.swing.*;

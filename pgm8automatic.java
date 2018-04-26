@@ -38,7 +38,7 @@ public class pgm8automatic extends Applet implements Runnable {
             try {
                 Thread.sleep(500);
             } catch (InterruptedException ex) {
-                Logger.getLogger(pgm9automatic.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(pgm8automatic.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
         }

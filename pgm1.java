@@ -7,11 +7,7 @@ d. Calculate ROI for SB Account or Loan Interest for at least 2 users. */
 package lab_programs;
 
 class Bank{
-	String name;
-	String address;
-	String phone;
-	String pan;
-	String aadhar;
+	String name,address,phone,pan,aadhar;
 	public Bank() {
 	}
 public Bank(String name, String address, String phone, String pan, String aadhar) {

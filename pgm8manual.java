@@ -5,7 +5,7 @@ c. Automate the Traffic Signal to change Traffic Light periodically. */
 
 /*Manual Signal Control*/
 
-package lab_programs;
+package lab;
 
 import java.applet.Applet;
 import java.awt.Color;
@@ -16,7 +16,6 @@ import java.awt.event.MouseListener;
 public class pgm8manual extends Applet implements MouseListener {
 	String color;    
 	public void init() {
-	// TODO start asynchronous download of heavy resources
 	color="red";
 	addMouseListener(this);
 }
@@ -25,10 +24,14 @@ public class pgm8manual extends Applet implements MouseListener {
 public void mouseClicked(MouseEvent e) {
 	if(color=="red")
 	{
-		color="green";
+		color="yellow";
+	}
+	else if(color=="yellow")
+	{
+			color="green";
 	}
 	else{
-		color="red";
+		color="green";
 	}
 	repaint();
 }
@@ -39,6 +42,11 @@ public void paint(Graphics g) {
 	{
 		g.setColor(Color.red);
 		g.fillOval(100, 100, 100, 100);
+	}
+	else if(color=="yellow")
+	{
+			g.setColor(Color.yellow);
+			g.fillOval(100, 100, 100, 100);
 	}
 	else{
 		g.setColor(Color.green);

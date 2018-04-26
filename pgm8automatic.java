@@ -56,16 +56,19 @@ public class pgm8automatic extends Applet implements Runnable {
     g.drawString(x+"", 50, 50);
     if(color=="red")
     {
+    	g.drawString("STOP", 135, 50);
         g.setColor(Color.red);
         g.fillOval(100, 100, 100, 100);
     }
     else if(color=="yellow")
     {
+    	g.drawString("READY", 135, 50);
         g.setColor(Color.yellow);
         g.fillOval(100, 100, 100, 100);
     }
     else if(color=="green")
     {
+    	g.drawString("GO", 135, 50);
         g.setColor(Color.green);
         g.fillOval(100, 100, 100, 100);
     }    

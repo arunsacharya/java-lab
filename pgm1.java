@@ -4,7 +4,7 @@ b. Specify how to store common details of the customers and separate different f
 c. Display the details of the customer with the type of account and its details.
 d. Calculate ROI for SB Account or Loan Interest for at least 2 users. */
 
-package lab_programs;
+package lab;
 
 class Bank{
 	String name,address,phone,pan,aadhar;
@@ -26,17 +26,11 @@ public Bank(String name, String address, String phone, String pan, String aadhar
 }
 class SBAccount extends Bank{
 	String accNum;
-	double accBal;
-	double interest;
+	double accBal,interest;
 	public SBAccount(String name, String address, String phone, String pan, String aadhar,String num) {
 	super(name, address, phone, pan, aadhar);
 	accNum=num;
 	accBal=1000;
-	}
-public SBAccount(String name, String address, String phone, String pan, String aadhar,String num,double bal) {
-	super(name, address, phone, pan, aadhar);
-	accNum=num;
-	accBal=bal;
 	}
 	
 void calcInt(){

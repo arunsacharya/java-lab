@@ -4,7 +4,7 @@ b. Specify how to store common details of the customers and separate different f
 c. Display the details of the customer with the type of account and its details.
 d. Calculate ROI for SB Account or Loan Interest for at least 2 users. */
 
-package lab;
+package lab_programs;
 
 class Bank{
 	String name,address,phone,pan,aadhar;

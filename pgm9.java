@@ -9,7 +9,7 @@ import java.awt.*;
 import javax.swing.*;
 import java.io.*;
 
-public class pgm9a {
+public class pgm9 {
 	public static String rows[][]=new String [6][3];
 	public static void initUI() {
 		try {
